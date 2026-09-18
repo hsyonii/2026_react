@@ -1,0 +1,37 @@
+#sidebar{
+    background-color: rgba(170, 59, 255, 0.5);
+    position: fixed;
+    top: 0;      
+    left: 0;          
+    width: 250px;
+    height: 100%;
+    color: white;
+}
+#main{
+    background-color:rgba(244, 243, 236, 0.5);
+    margin-left: 275px;
+    width: 550ppx;
+    height: 300px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#title{
+    font-size: 35px;
+}
+*{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+
+.table{
+    border: 2px solid black;
+}
