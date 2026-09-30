@@ -1,18 +1,18 @@
 import { Link, Routes, Route } from "react-router-dom";
-import CategoryPost from "./CategoryPost";
+import Seungyeon from "./Seungyeon";
 import ProductGet from "./ProductGet";
 import ProductPost from "./ProductPost";
 import AnYang from "./AnYang";
 import "./App.css";
 
 export default function App (props){
-    return(<>
+    return(<div id="body">
         <div id = "sidebar">
             <div id = "title">ㅇㅇㅇ팀 프로젝트</div>
-            <div id = "menuTitle">
-                팀원소개
+            <div>
+                <p id="menuTitle">팀원소개</p>
                 <ul id = "menu">
-                    <li><Link to="/categoryPost">카테고리등록</Link></li>
+                    <li><Link to="/seungyeon">김승연</Link></li>
                     <li><Link to="/productGet">제품조회</Link></li>
                     <li><Link to="/productPost">제품등록</Link></li>
                     <li><Link to="/view">안양시 생필품 가격 동향</Link></li>
@@ -21,11 +21,11 @@ export default function App (props){
         </div>
         <div id ="main">
             <Routes>
-                <Route path="/categoryPost" element={<CategoryPost/>}/>
+                <Route path="/Seungyeon" element={<Seungyeon/>}/>
                 <Route path="/productPost" element={<ProductPost/>}/>
                 <Route path="/productGet" element={<ProductGet/>}/>
                 <Route path="/view" element={<AnYang/>}/>
             </Routes>
         </div>
-    </>)
+    </div>)
 }

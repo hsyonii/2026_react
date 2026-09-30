@@ -18,7 +18,7 @@ export default function AnYang(props) {
     const list = data.data;
 
     return (
-        <div>
+        <div id="main">
             <h3 className='mainTitle'>안양 생필품 가격동향</h3>
             <table border="1">
                 <thead>
